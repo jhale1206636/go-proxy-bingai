@@ -1,8 +1,7 @@
 name: Cloudflare Worker Deploy
 on:
-  push:
-    branches:
-      - master
+  schedule:
+    - cron: '0 16 * * *'      
   repository_dispatch:
   workflow_dispatch:
 
